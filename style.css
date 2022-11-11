@@ -1,0 +1,94 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', san-serif;
+}
+
+
+body{
+    background: rgb(147, 21, 163);
+    color: rgb(255, 234, 2);
+    top: 35%;
+    left: 40%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box
+{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px;
+background: linear-gradient(to bottom,rgba(0,0,0,0.05),#edf1f4);
+border-radius: 40px;
+box-shadow: 15px 15px 20px rgba(0,0,0,0.1), -15px -15px 20px #fff;
+}
+
+.range
+{
+    width: 400px;
+    height: 15px;
+    appearance: none;
+    background: #bbef10;
+    outline: none;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1), 5px 5px 10px #fff,
+    inset 5px 5px 5px rbga(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.range::-webkit-slider-thumb
+{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: rgb(197, 238, 15);
+    border-radius: 50%;
+    border: 2px solid #a600cf;
+    box-shadow: -407px 0 0 400px #ff27e6;
+    cursor: pointer;
+}
+
+#rangeValue
+{
+   position: relative;
+   text-align: center; 
+   width: 60px;
+   font-size: 1.25em;
+   color: rgb(218, 232, 18);
+   background: #27a0ff;
+   margin-left: 15px;
+   border-radius: 25px;
+   font-weight: 500;
+   box-shadow:  5px 5px 10px rgba(0,0,0,0.1),
+   -5px -5px 10px rgb(212, 238, 15),
+   inset 5px 5px 10px rgba(0,0,0,0.1),
+   inset -5px -5px 5px rbga(255,255,255,0.25);
+}
+
+button{
+    background: rgb(88, 15, 67);
+    color: rgb(210, 223, 22);
+    text-align: center;
+    width: 30%;
+    height: 30%;
+    padding: 8px;
+    border-radius: 30%;
+}
+
+.hide{
+    opacity: 0;
+    top: calc(25%+8rem);
+}
+
+.show{
+    opacity: 1;
+    top: calc(25%+5rem);
+}
